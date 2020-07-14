@@ -1,6 +1,7 @@
 'use strict';
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 //Pair programmed with Mike and Riva/collaborated with.
+
 function getRandomArbitrary(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
