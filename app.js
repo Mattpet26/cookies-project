@@ -1,5 +1,6 @@
 'use strict';
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+//Pair programmed with Mike and Riva/collaborated with.
 function getRandomArbitrary(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -12,7 +13,7 @@ var SeattleCookies = {
   avgCookie: 6.3,
   totalCookies: 0,
   city: 'Seattle',
-  time: ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'],
+  time: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   renderCity: function(){
     var cityList = document.getElementById('city');
     var location = document.createElement('li');
@@ -44,7 +45,7 @@ var TokyoCookies = {
   avgCookie: 1.2,
   totalCookies: 0,
   city: 'Tokyo',
-  time: ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'],
+  time: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   renderCity: function(){
     var cityList = document.getElementById('tokyo');
     var location = document.createElement('li');
@@ -77,7 +78,7 @@ var DubaiCookies = {
   avgCookie: 3.7,
   totalCookies: 0,
   city: 'Dubai',
-  time: ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'],
+  time: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   renderCity: function(){
     var cityList = document.getElementById('dubai');
     var location = document.createElement('li');
@@ -110,7 +111,7 @@ var ParisCookies = {
   avgCookie: 2.3,
   totalCookies: 0,
   city: 'Paris',
-  time: ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'],
+  time: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   renderCity: function(){
     var cityList = document.getElementById('paris');
     var location = document.createElement('li');
@@ -143,7 +144,7 @@ var LimaCookies = {
   avgCookie: 4.6,
   totalCookies: 0,
   city:'Lima',
-  time: ['6am:', '7am:', '8am:', '9am:', '10am:', '11am:', '12am:', '1pm:', '2pm:', '3pm:', '4pm:', '5pm:', '6pm:', '7pm:'],
+  time: ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '],
   renderCity: function(){
     var cityList = document.getElementById('lima');
     var location = document.createElement('li');
