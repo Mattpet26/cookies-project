@@ -1,15 +1,5 @@
 'use strict';
 
-// //1.
-// var taskList = document.getElementById('tasks');
-
-// //2. (whatever tag we want)
-// var aNewTask = document.createElement('li');
-// aNewTask.textContent = 'Here is a new item in the li!';
-
-// //3. -this is connected to the first var
-// taskList.appendChild(aNewTask);
-
 function getRandomArbitrary(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);

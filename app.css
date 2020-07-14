@@ -1,0 +1,24 @@
+body {
+  background-color: bisque;
+
+}
+
+h1 {
+  text-decoration-style: wavy;
+  font-style: initial;
+  color: maroon;
+  font-family: fantasy; 
+  
+}
+
+nav {
+  padding: 20px;
+  background-color: mediumseagreen;
+  color: midnightblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  background-color: mintcream;
+  color: black
+}
