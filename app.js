@@ -10,12 +10,17 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
   this.city = city;
   this.cookieArray = [],
   this.time = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '];
+    //assigning a method to rendercity and it gets a function.
   this.renderCity = function(){
-  //assigning a method to rendercity and it gets a function.
+    //finding the target / parent
     var table = document.getElementById('tableStuff');
+    //creating an element - tr
     var row = document.createElement('tr');
+    //creating an element - td, and giving content to row
     var tableData = document.createElement('td')
+    // giving the tableData content
     tableData.textContent = this.city;
+    // row object representing a tr, and call appendchild method passing in the tableData object representing the td
     row.appendChild(tableData)
     for(var i = 0; i < this.time.length; i++){
       var tableData = document.createElement('td')
@@ -28,7 +33,7 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+    //source https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
   }
   this.renderMath = function(){
     for(var i = 0; i < this.time.length; i++){
