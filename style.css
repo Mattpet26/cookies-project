@@ -28,6 +28,8 @@ ul {
 }
 
 table, td, th {
+  align-content: center;
+  background-color: mediumaquamarine;
   border: solid black 1px;
   border-collapse: collapse;
   padding: 8px;
