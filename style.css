@@ -27,6 +27,11 @@ ul {
   color: black
 }
 
+img {
+  width: 400px;
+  height: 150px;
+}
+
 table, td, th {
   align-content: center;
   background-color: mediumaquamarine;
