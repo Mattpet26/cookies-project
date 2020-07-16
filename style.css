@@ -20,11 +20,14 @@ nav ul {
   float: left;
 }
 
-nav li {
+nav > ul > li {
   float: left;
   line-height: 90px;
-  margin-right: 200px;
+}
+
+nav > ul > li > a {
   font-size: 30px;
+  padding-left: 60px;
 }
 
 body {
@@ -38,6 +41,36 @@ h1 {
   font-size: 50px;
   font-family: fantasy; 
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+article > ul:first-child {
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 30px;
+  padding-right: 80px;
+}
+
+article > ul > li > p {
+  font-size: 20px;
+}
+
+article > ul:nth-child(2) {
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 30px;
+  padding-right: 80px;
+}
+
+article > ul:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 30px;
+  padding-right: 0px;
+}
+
+article > ul > li > a {
+  text-decoration: underline;
 }
 
 main > img:first-child {
