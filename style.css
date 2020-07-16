@@ -1,35 +1,61 @@
-body {
-  background-color: bisque;
-  margin: 50px;
-}
-
-h1 {
-  text-decoration-style: wavy;
-  font-style: initial;
-  color: maroon;
-  font-family: fantasy; 
+header {
+  background-color: mediumseagreen;
+  height: 90px;
 }
 
 nav {
-  padding: 15px;
-  background-color: mediumseagreen;
+  margin: 0 auto;
+  width: 960px;
 }
 
-a {
-  padding-left: 50px;
-  color: midnightblue;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
+nav img {
+  margin-top: 20px;
+  float: left;
+  margin-right: 30px;
+  width: 100px;
+  height: 50px;
 }
 
-ul {
-  background-color: mintcream;
-  color: black
+nav ul {
+  float: left;
 }
 
-img {
-  width: 400px;
-  height: 150px;
+nav li {
+  float: left;
+  line-height: 90px;
+  margin-right: 200px;
+  font-size: 30px;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+h1 {
+  color: maroon;
+  font-size: 50px;
+  font-family: fantasy; 
+  margin-top: 20px;
+}
+
+main > img:first-child {
+  margin-top: 30px;
+}
+
+main > ul:nth-child(2){
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+main > ul:nth-child(2) > li {
+  float: left;
+  margin-right: 30px;
+}
+
+main > ul:nth-child(2) > li:nth-child(3) {
+  margin-right: 0;
 }
 
 table, td, th {
