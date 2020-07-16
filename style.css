@@ -1,5 +1,5 @@
 header {
-  background-color: mediumseagreen;
+  background-color: turquoise;
   height: 90px;
 }
 
@@ -28,6 +28,8 @@ nav > ul > li {
 nav > ul > li > a {
   font-size: 30px;
   padding-left: 60px;
+  text-decoration: none;
+  color: maroon;
 }
 
 body {
@@ -53,6 +55,7 @@ article > ul:first-child {
 
 article > ul > li > p {
   font-size: 20px;
+  padding-top: 10px;
 }
 
 article > ul:nth-child(2) {

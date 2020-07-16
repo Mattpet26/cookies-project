@@ -1,6 +1,25 @@
 'use strict';
 //Pair programmed with Mike and Riva/collaborated with.
 
+
+var newStandForm = document.getElementById('addStore');
+
+newStandForm.addEventListener('submit', createNewStand);
+
+function createNewStand(event){
+  event.preventDefault();
+  var minValue = event.target.min1.value;
+  var maxValue = event.target.max1.value;
+  var avgCookieValue = event.target.avgCookie1.value;
+  var cityName = event.target.city1.value;
+
+  var newStand = new cookieFunction(minValue, maxValue, avgCookieValue, cityName)
+  newStand.renderCity();
+  newStand.renderMath();
+}
+
+//================================= Table Stuff=========================//
+
 function cookieFunction(min, max, avgCookie, totalCookies, city){
   // this refers to the new object made by the constructor
   this.min = min;
@@ -11,8 +30,6 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
   this.cookieArray = [],
   this.time = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: '];
 
-
-    //assigning a method to rendercity and it gets a function.
   this.renderCity = function(){
     var table = document.getElementById('tableStuff');
     var row = document.createElement('tr');
@@ -20,14 +37,11 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
     tableData.textContent = this.city;
     row.appendChild(tableData)
 
-
     for(var i = 0; i < this.time.length; i++){
       var tableData = document.createElement('td')
       tableData.textContent = this.cookieArray[i];
       row.appendChild(tableData)
     }
-
-
     var tableCityTotals = document.createElement('td')
     tableCityTotals.textContent = this.totalCookies;
     row.appendChild(tableCityTotals);
@@ -60,16 +74,15 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
     var tableData = document.createElement('td')
     row.appendChild(tableData)
 
-
     for(var i = 0; i < this.time.length; i++){
       var tableData = document.createElement('td');
       tableData.textContent = this.time[i];
       row.appendChild(tableData);
     }
     var tableData = document.createElement('td');
-      tableData.textContent = 'City totals';
+      tableData.textContent = 'Daily totals';
       row.appendChild(tableData);
-     table.appendChild(row);
+      table.appendChild(row);
   }
 
 
@@ -77,10 +90,9 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
     var table = document.getElementById('tableStuff');
     var row = document.createElement('tr');
     var tableData = document.createElement('td')
-    tableData.textContent = 'Totals';
+    tableData.textContent = 'Hourly totals';
     row.appendChild(tableData)
     var counter = 0;
-
 
     for(var i = 0; i < this.time.length; i++){
       var tableData = document.createElement('td')
@@ -89,14 +101,13 @@ function cookieFunction(min, max, avgCookie, totalCookies, city){
       counter = saveTheCookieTotals + counter;
       row.appendChild(tableData)
     }
-
-
     var tableData = document.createElement('td')
     tableData.textContent = counter;
     row.appendChild(tableData)
     table.appendChild(row);
   }
 }
+
 var seattleName = new cookieFunction(23, 65, 6.3, 0, 'Seattle');
 seattleName.renderMath();
 seattleName.renderTime();
